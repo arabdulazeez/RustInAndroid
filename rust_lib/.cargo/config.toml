@@ -1,5 +1,5 @@
 [target.aarch64-linux-android]
-linker = "C:\\Users\\taimoor\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\aarch64-linux-android21-clang++.cmd"
+linker = "/Users/abdulazeez/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang++"
 
 [target.armv7-linux-androideabi]
-linker = "C:\\Users\\taimoor\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\armv7a-linux-androideabi21-clang++.cmd"
+linker = "/Users/abdulazeez/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang++"

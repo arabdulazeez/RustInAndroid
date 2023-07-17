@@ -74,7 +74,7 @@ fun Homepage() {
             }
             Spacer(modifier = Modifier.size(14.dp))
             Button(onClick = {
-                val first = firstInput.toLongOrNull()
+                val first = 5L;//firstInput.toLongOrNull()
                 val second = secondInput.toLongOrNull()
                 if (first == null || second == null) {
                     showError = true
