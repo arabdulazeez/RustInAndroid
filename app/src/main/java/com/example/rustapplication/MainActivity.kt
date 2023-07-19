@@ -1,6 +1,8 @@
 package com.example.rustapplication
 
+import android.os.AsyncTask
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
@@ -14,6 +16,7 @@ import androidx.compose.ui.unit.dp
 import com.example.rustapplication.lib.Inputs
 import com.example.rustapplication.lib.RustLog
 import com.example.rustapplication.ui.theme.RustApplicationTheme
+
 
 class MainActivity : ComponentActivity() {
 
@@ -85,6 +88,9 @@ fun Homepage() {
                 subtraction = "${inputs.subtraction()}"
                 multiplication = "${inputs.multiplication()}"
                 showError = false
+                AsyncTask.execute {
+                    Log.d("Rust", inputs.makeCall());
+                }
             }) {
                 Text(text = "=")
             }

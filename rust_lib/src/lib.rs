@@ -53,13 +53,8 @@ impl Inputs {
     }
 
     #[generate_interface]
-    pub fun makeCall(&self) {
-        let b = reqwest::get("https://api.apis.guru/v2/list.json")
-            .await?
-            .json()
-            .await?;
-
-            println!("Got {:?}", b);
-
+    pub fn make_call(&self) -> Result<String, String> {
+        reqwest::blocking::get("https://pastebin.com/raw/kRMwpCJS").unwrap()
+            .text().map_err(|e| e.status().unwrap().as_str().to_owned())
     }
 }

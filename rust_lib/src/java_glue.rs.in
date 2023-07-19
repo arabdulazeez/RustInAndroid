@@ -13,5 +13,6 @@ foreign_class!(
 		fn Inputs::addition(& self)->i64; alias addition;
 		fn Inputs::subtraction(& self)->i64; alias subtraction;
 		fn Inputs::multiplication(& self)->i64; alias multiplication;
+		fn Inputs::make_call(& self)->Result<String,String>; alias makeCall;
 	}
 );
